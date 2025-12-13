@@ -142,11 +142,7 @@ sudo python run.py export --format json
 
 ---
 
-## 🎨 Web Dashboard Screenshots
 
-*(Insert screenshots or GIFs here)*
-
----
 
 ## 🛡️ Security Considerations
 
@@ -158,6 +154,7 @@ sudo python run.py export --format json
 ---
 
 ## 🛣️ Roadmap
+Planned features (high-level)
 
 - [ ] Alert email/SMS integration
 - [ ] Docker deployment
