@@ -170,7 +170,7 @@ sudo python run.py export --format json
 
 ## 👨‍💻 Author
 
-- GitHub: [YOURNAME]
+- GitHub: Kagias
 - License: MIT
 
 ---
