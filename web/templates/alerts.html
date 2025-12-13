@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+{% block content %}
+<h2>Alerts & Anomalies</h2>
+<ul>
+  {% for alert in alerts %}
+  <li>
+    <b>{{ alert.type|upper }}</b> [{{ alert.ts }}]: {{ alert.desc }}
+  </li>
+  {% endfor %}
+</ul>
+{% endblock %}

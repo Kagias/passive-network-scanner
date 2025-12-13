@@ -1,0 +1,17 @@
+body.dark, body.dark main {
+  background: #12171f;
+  color: #e0e0e0;
+}
+body.dark header, body.dark footer {
+  background: #181f2f;
+  color: #b7c7e0;
+}
+body.dark nav a {
+  color: #44bbaa;
+}
+body.dark table, body.dark th, body.dark td {
+  background: #1a2339;
+  color: #cbd8e6;
+  border-color: #333e50;
+}
+body.dark #security-score { color: #ffd700; }

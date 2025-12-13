@@ -1,0 +1,11 @@
+# Passive Network Scanner configuration
+# Update 'interface' to match your network interface (use 'ip link' to see available)
+
+interface: wlo1
+traffic_burst_threshold: 120     # packets/sec before "burst" alert
+oui_lookup_url: "https://api.macvendors.com/"
+db_path: "scanner.db"
+web:
+  host: "127.0.0.1"  # Changed from 0.0.0.0 for security - only localhost access
+  port: 5000
+  debug: false  # SECURITY: Changed to false - never enable in production

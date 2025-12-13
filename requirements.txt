@@ -1,0 +1,8 @@
+scapy
+flask
+flask-socketio
+eventlet
+python-dotenv
+pyyaml
+requests
+netifaces

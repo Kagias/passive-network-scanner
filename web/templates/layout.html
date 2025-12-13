@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Passive Network Scanner</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='darkmode.css') }}">
+  <script src="https://cdn.socket.io/4.7.4/socket.io.min.js"></script>
+  <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</head>
+<body>
+  <header>
+    <h1>Passive Network Scanner</h1>
+    <nav>
+      <a href="/">Dashboard</a>
+      <a href="/devices">Devices</a>
+      <a href="/alerts">Alerts</a>
+    </nav>
+  </header>
+  <main>
+    {% block content %}{% endblock %}
+  </main>
+  <footer>
+    <span>© 2025. Open Source Network Security. </span>
+    <button id="toggle-dark">Toggle Dark Mode</button>
+  </footer>
+  <script>
+    document.getElementById('toggle-dark').onclick = function() {
+      document.body.classList.toggle('dark');
+    };
+  </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+{% block content %}
+<h2>Network Dashboard</h2>
+<div id="security-score">
+  Security Score: <span id="score-value">--</span>/100
+</div>
+<section>
+  <h3>Active Devices</h3>
+  <table id="devices-table">
+    <thead><tr><th>MAC</th><th>IP</th><th>Vendor</th><th>Hostname</th><th>First Seen</th><th>Last Seen</th><th>OS</th></tr></thead>
+    <tbody>
+      <!-- filled via JS -->
+    </tbody>
+  </table>
+</section>
+<section>
+  <h3>Recent Alerts & Anomalies</h3>
+  <ul id="alerts-list">
+    <!-- filled via JS -->
+  </ul>
+</section>
+<section>
+  <h3>Live Traffic</h3>
+  <canvas id="traffic-graph" width="640" height="180"></canvas>
+</section>
+<script>
+document.addEventListener('DOMContentLoaded', setupDashboard);
+</script>
+{% endblock %}

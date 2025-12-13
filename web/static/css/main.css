@@ -1,0 +1,30 @@
+body {
+  font-family: system-ui, sans-serif;
+  background: #f5f6f7;
+  color: #222;
+  margin: 0; padding: 0;
+}
+header, footer {
+  background: #10151e;
+  color: white; padding: 1em;
+}
+nav a {
+  color: #80cbc4;
+  margin-right: 1em;
+  text-decoration: none;
+}
+main {
+  max-width: 900px;
+  margin: 2em auto; padding: 2em;
+  background: white; border-radius: 10px;
+  box-shadow: 0 4px 12px #0002;
+}
+h2, h3 { margin-top: 0; }
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+th, td { padding: 0.6em 0.8em; border: 1px solid #e0e0e0; }
+ul#alerts-list { list-style: square; color: #c0392b; }
+#security-score { font-size: 1.6em; margin-bottom: 1em; }
+button#toggle-dark { float: right; background: #444; color: #fff; border: none; padding: 0.4em 1em; cursor: pointer; border-radius: 6px; }

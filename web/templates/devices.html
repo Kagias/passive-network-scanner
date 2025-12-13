@@ -1,0 +1,20 @@
+{% extends "layout.html" %}
+{% block content %}
+<h2>Devices</h2>
+<table id="devices-table">
+  <thead><tr><th>MAC</th><th>IP</th><th>Vendor</th><th>Hostname</th><th>First Seen</th><th>Last Seen</th><th>OS</th></tr></thead>
+  <tbody>
+    {% for dev in devices %}
+    <tr>
+      <td>{{ dev.mac }}</td>
+      <td>{{ dev.ip }}</td>
+      <td>{{ dev.vendor }}</td>
+      <td>{{ dev.hostname }}</td>
+      <td>{{ dev.first_seen }}</td>
+      <td>{{ dev.last_seen }}</td>
+      <td>{{ dev.os_guess }}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+{% endblock %}
