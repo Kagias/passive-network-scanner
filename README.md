@@ -62,7 +62,7 @@ graph TD
 
 ```bash
 # Linux, macOS, Windows (Python 3.8+ required, must be run as root/admin)
-git clone https://github.com/YOURNAME/passive-network-scanner.git
+git clone https://github.com/Kagias/passive-network-scanner.git
 cd passive-network-scanner
 python3 -m venv venv
 . venv/bin/activate
